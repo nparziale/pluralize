@@ -109,7 +109,7 @@ var replaceWord = function (replaceMap, keepMap, rules) {
  * @param  {Boolean} inclusive
  * @return {String}
  */
-var pluralize = ((typeof module !== 'undefined')?module:{}).exports = function (word, count, inclusive) {
+var pluralize = ( (typeof module !== 'undefined')?module:{} ).exports = function (word, count, inclusive) {
   var pluralized = count === 1 ? singular(word) : plural(word);
 
   return (inclusive ? (count|0) + ' ' : '') + pluralized;
